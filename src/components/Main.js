@@ -11,7 +11,11 @@ const Main = ({ handleCloseMainPage }) => {
           <h5>Noi ne căsătorim!</h5>
           <h1>Cristian și Ana</h1>
           <h5>20 | octombrie | 2023</h5>
-          <h5>Restaurant Avegarden, str. Socoleni 5/3</h5>
+          <h5>
+            <a href="https://goo.gl/maps/yPtBygbebA5CoGDV7?coh=178573&entry=tt">
+              Restaurant Avegarden, str. Socoleni 5/3
+            </a>
+          </h5>
 
           <button
             className="main_action_button"
