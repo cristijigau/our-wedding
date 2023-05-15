@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Italianno&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Hurricane&family=Italianno&family=Quicksand:wght@300;400&display=swap');
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -31,24 +41,26 @@
       font-size: 36px;
       position: relative;
 
-      h6 {
-        font-size: 18px;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        margin-bottom: 18px;
-      }
-
       h5 {
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
-        margin-bottom: 18px;
+        margin-bottom: 6px;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 16px;
+        }
       }
 
       h1 {
         font-size: 110px;
-        font-family: 'Italianno', cursive;
+        font-family: 'Hurricane', cursive;
         font-weight: 400;
+        margin-bottom: 16px;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 58px;
+        }
       }
 
       .main_action_button {
@@ -60,7 +72,9 @@
         outline: none;
         transition: 1s ease-in-out;
         position: relative;
-        margin-top: 38px;
+        margin-top: 64px;
+        animation-name: example;
+        animation-iteration-count: infinite;
 
         span {
           color: white;
@@ -73,10 +87,6 @@
         &:hover {
           transition: 1s ease-in-out;
           background: rgba(255, 255, 255, 0.2);
-
-          svg {
-            stroke-dashoffset: -600;
-          }
         }
       }
 
@@ -87,8 +97,18 @@
         fill: none;
         stroke: #fff;
         stroke-dasharray: 150 600;
-        stroke-dashoffset: 150;
-        transition: 1s ease-in-out;
+        @include keyframes(lightning) {
+          0% {
+            stroke-dashoffset: 150;
+          }
+          60% {
+            stroke-dashoffset: -600;
+          }
+          100% {
+            stroke-dashoffset: -600;
+          }
+        }
+        @include animate(lightning, 3s, ease-in-out, infinite);
       }
     }
   }

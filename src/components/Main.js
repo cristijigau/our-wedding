@@ -1,16 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Main = () => {
+const Main = ({ handleCloseMainPage }) => {
+  const navigate = useNavigate();
+
   return (
     <section className="main_section">
       <div className="image_overlay">
         <div className="welcome_section">
           <h5>Noi ne căsătorim!</h5>
           <h1>Cristian și Ana</h1>
-          <h6>20 | octombrie | 2023</h6>
-          <h6>Restaurant Avegarden, str. Socoleni 5/3</h6>
+          <h5>20 | octombrie | 2023</h5>
+          <h5>Restaurant Avegarden, str. Socoleni 5/3</h5>
 
-          <button className="main_action_button">
+          <button
+            className="main_action_button"
+            onClick={() => {
+              navigate('/home');
+            }}
+          >
             <svg
               width="200px"
               height="46px"
