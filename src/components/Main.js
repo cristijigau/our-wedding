@@ -16,17 +16,23 @@ const Main = ({ handleCloseMainPage }) => {
           <button
             className="main_action_button"
             onClick={() => {
-              navigate('/home');
+              navigate('/our-wedding/home');
             }}
           >
             <svg
               width="200px"
               height="46px"
               viewBox="0 0 200 46"
-              class="border"
+              className="border"
             >
-              <polyline points="200,0 200,46 0,46 0,0 200,0" class="bg-line" />
-              <polyline points="200,0 200,46 0,46 0,0 200,0" class="hl-line" />
+              <polyline
+                points="200,0 200,46 0,46 0,0 200,0"
+                className="bg-line"
+              />
+              <polyline
+                points="200,0 200,46 0,46 0,0 200,0"
+                className="hl-line"
+              />
             </svg>
             <span>Deschide</span>
           </button>
