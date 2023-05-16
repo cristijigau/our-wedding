@@ -1,46 +1,46 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const MenuItems = () => {
   const [selected, setSelected] = useState('1');
 
-  const navigate = useNavigate();
-
   const handleClick = e => {
     setSelected(e.target.id);
-    navigate(`#${e.target.id}`);
   };
 
   return (
     <>
-      <li
+      <a
+        href="#section1"
         className={selected === '1' ? 'selected' : ''}
         id="1"
         onClick={handleClick}
       >
         First
-      </li>
-      <li
+      </a>
+      <a
+        href="#section2"
         className={selected === '2' ? 'selected' : ''}
         id="2"
         onClick={handleClick}
       >
         Second
-      </li>
-      <li
+      </a>
+      <a
+        href="#section3"
         className={selected === '3' ? 'selected' : ''}
         id="3"
         onClick={handleClick}
       >
         Third
-      </li>
-      <li
+      </a>
+      <a
+        href="#section4"
         className={selected === '4' ? 'selected' : ''}
         id="4"
         onClick={handleClick}
       >
         Fourth
-      </li>
+      </a>
     </>
   );
 };

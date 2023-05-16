@@ -12,13 +12,12 @@ ul {
   .ornament_icon {
     width: 2rem;
     height: 2rem;
-    filter: invert(100%);
   }
 
   .vertical_line {
     display: inline-block;
     width: 2px;
-    background: white;
+    background: black;
     height: 2rem;
   }
 }

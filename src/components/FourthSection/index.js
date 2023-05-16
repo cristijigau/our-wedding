@@ -1,9 +1,14 @@
 import React from 'react';
 import './index.scss';
+import VerticalOrnament from '../../features/VerticalOrnaments';
+
+import firstIcon from '../../assets/icons/cheers.png';
+import secondIcon from '../../assets/icons/dove.png';
 
 const FourthSection = () => {
   return (
-    <section className="fourth_section" id="4">
+    <section className="fourth_section" id="section4">
+      <VerticalOrnament firstIcon={firstIcon} secondIcon={secondIcon} />
       <h1>Titile 3</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis

@@ -5,9 +5,9 @@ import MenuItems from '../MenuItems';
 const Nav = () => {
   return (
     <div className="navigation">
-      <ul>
+      <div className="links">
         <MenuItems />
-      </ul>
+      </div>
     </div>
   );
 };

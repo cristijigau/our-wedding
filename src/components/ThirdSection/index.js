@@ -3,7 +3,7 @@ import './index.scss';
 
 const ThirdSection = () => {
   return (
-    <section className="third_section" id="3">
+    <section className="third_section" id="section3">
       <h1>Titile 2</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis

@@ -5,16 +5,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  //   background: rgba(255, 255, 255, 0.2);
   background: white;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   color: black;
   height: 50px;
   padding: 1em;
   position: fixed;
   width: 100%;
   font-family: 'Quicksand', sans-serif;
+
+  z-index: 10;
 
   .logo {
     h3 {
@@ -52,7 +51,7 @@
     display: block;
     background-color: black;
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -81,34 +80,46 @@
     transform: rotate(-405deg);
   }
 
-  #menu_toggle ~ .menu li {
+  #menu_toggle ~ .menu a {
+    text-decoration: none;
+    visibility: hidden;
     height: 0;
     margin: 0;
     padding: 0;
-    border: 0;
-    color: transparent;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
-  #menu_toggle:checked ~ .menu li {
-    border: 1px solid #333;
+  #menu_toggle:checked ~ .menu a {
+    visibility: visible;
     height: 2.5em;
     padding: 0.5em;
-    color: white;
+    color: black;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
-  .menu > li {
+  .menu > a {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0.5em 0;
     width: 100%;
-    background-color: #222;
+    background-color: white;
+    position: relative;
   }
 
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+  .menu {
+    background: white;
+    a {
+      &:not(:first-child) {
+        &::before {
+          content: '';
+          width: 90%;
+          height: 1px;
+          background-color: black;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 600px) {

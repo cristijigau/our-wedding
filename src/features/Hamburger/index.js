@@ -12,9 +12,9 @@ const Hamburger = () => {
       <label className="menu_button_container" htmlFor="menu_toggle">
         <div className="menu_button"></div>
       </label>
-      <ul className="menu">
+      <div className="menu">
         <MenuItems />
-      </ul>
+      </div>
     </section>
   );
 };
