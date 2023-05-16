@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './countdown.scss';
+import './index.scss';
 
 const COUNTDOWN_TARGET = new Date('2023-06-31T23:59:59');
 

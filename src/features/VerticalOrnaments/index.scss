@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .ornament_icon {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%);
+  }
+
+  .vertical_line {
+    display: inline-block;
+    width: 2px;
+    background: white;
+    height: 2rem;
+  }
+}
