@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import VerticalOrnaments from '../features/VerticalOrnaments';
+// import VerticalOrnaments from '../features/VerticalOrnaments';
 
-import marriageIcon from '../assets/icons/marriage.png';
-import doveIcon from '../assets/icons/dove.png';
-import hallIcon from '../assets/icons/hall.png';
-import cheersIcon from '../assets/icons/cheers.png';
+// import marriageIcon from '../assets/icons/marriage.png';
+// import doveIcon from '../assets/icons/dove.png';
+// import hallIcon from '../assets/icons/hall.png';
+// import cheersIcon from '../assets/icons/cheers.png';
+// import mainIcon from '../assets/icons/cheers.png';
 
 const Main = () => {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ const Main = () => {
       <div className="image_overlay">
         <div className="welcome_section">
           {/* <VerticalOrnaments firstIcon={doveIcon} secondIcon={marriageIcon} /> */}
+          {/* <img src={mainIcon} className="main_icon" alt="icon" /> */}
           <h5>Noi ne căsătorim!</h5>
           <h1>Cristian și Ana</h1>
           <h5>20 | octombrie | 2023</h5>

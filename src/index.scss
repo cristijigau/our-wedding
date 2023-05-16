@@ -17,7 +17,6 @@
 }
 
 .main_section {
-  background-color: pink;
   height: 100vh;
   background: url('./assets/images/main_background.jpg');
   background-position: center; /* Center the image */
@@ -40,6 +39,13 @@
       font-size: 36px;
       position: relative;
       color: white;
+
+      .main_icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        filter: invert(100%);
+        margin-bottom: 1.5rem;
+      }
 
       h5,
       h5 a {

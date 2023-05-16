@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './index.scss';
 
-const COUNTDOWN_TARGET = new Date('2023-06-31T23:59:59');
+const COUNTDOWN_TARGET = new Date('2023-10-20T18:00:00');
 
 const getTimeLeft = () => {
   const totalTimeLeft = COUNTDOWN_TARGET - new Date();
-  const days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
-  const seconds = Math.floor((totalTimeLeft / 1000) % 60);
-  return { days, hours, minutes, seconds };
+  const zile = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
+  const ore = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
+  const minute = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
+  const secunde = Math.floor((totalTimeLeft / 1000) % 60);
+  return { zile, ore, minute, secunde };
 };
 
 const Countdown = () => {
