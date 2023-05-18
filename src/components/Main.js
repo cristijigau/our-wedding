@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 // import VerticalOrnaments from '../features/VerticalOrnaments';
 
 // import marriageIcon from '../assets/icons/marriage.png';
@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 // import mainIcon from '../assets/icons/cheers.png';
 
 const Main = () => {
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
   return (
     <section className="main_section">
@@ -29,7 +29,7 @@ const Main = () => {
           <button
             className="main_action_button"
             onClick={() => {
-              navigate('/our-wedding/home');
+              //   navigate('/our-wedding/home');
             }}
           >
             <svg
