@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const MenuItems = () => {
   const [selected, setSelected] = useState('1');
@@ -7,40 +8,50 @@ const MenuItems = () => {
     setSelected(e.target.id);
   };
 
+  const scrollWithOffset = el => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -50;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
   return (
     <>
-      <a
-        href="#section1"
+      <HashLink
+        to="#section1"
         className={selected === '1' ? 'selected' : ''}
         id="1"
         onClick={handleClick}
+        scroll={el => scrollWithOffset(el)}
       >
         First
-      </a>
-      <a
-        href="#section2"
+      </HashLink>
+      <HashLink
+        to="#section2"
         className={selected === '2' ? 'selected' : ''}
         id="2"
         onClick={handleClick}
+        scroll={el => scrollWithOffset(el)}
       >
         Second
-      </a>
-      <a
-        href="#section3"
+      </HashLink>
+      <HashLink
+        to="#section3"
         className={selected === '3' ? 'selected' : ''}
         id="3"
         onClick={handleClick}
+        scroll={el => scrollWithOffset(el)}
       >
         Third
-      </a>
-      <a
-        href="#section4"
+      </HashLink>
+      <HashLink
+        to="#section4"
         className={selected === '4' ? 'selected' : ''}
         id="4"
         onClick={handleClick}
+        scroll={el => scrollWithOffset(el)}
       >
         Fourth
-      </a>
+      </HashLink>
     </>
   );
 };
