@@ -69,7 +69,26 @@ const Landing = () => {
           </span>
         </div>
       </section>
-      <section className="third_section"></section>
+      <section className="third_section">
+        <h1>Unde va avea loc evenimentul?</h1>
+        <p>
+          Cu o amplasare convenabilă în orașul Chișinău,
+          <a href="https://avegarden.md/" target="_blank" rel="noreferrer">
+            {` Restaurantul Avegarden `}
+          </a>
+          impresionează prin designul său modern și spațiul generos oferit.
+        </p>
+      </section>
+      <section className="location">
+        <iframe
+          title="location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.90072787018!2d28.847768576303853!3d47.06179767114503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ddfe95690c5%3A0xac60947a8d909966!2sAve%20Garden!5e0!3m2!1sro!2s!4v1684439656663!5m2!1sro!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          className="map"
+        ></iframe>
+      </section>
     </div>
   );
 };
