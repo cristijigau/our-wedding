@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './index.scss';
 
 import timeline from '../../assets/images/timeline.jpg';
+import CarouselComponent from '../../features/Carousel';
+import Questions from '../../features/Questions';
 
 const Landing = () => {
+  const firstSectionRef = useRef(null);
+
   return (
     <div className="landing">
       <div className="welcome_section">
@@ -21,6 +25,9 @@ const Landing = () => {
             width="38.417px"
             height="18.592px"
             viewBox="0 0 38.417 18.592"
+            onClick={() => {
+              firstSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             <g>
               <path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"></path>
@@ -28,7 +35,7 @@ const Landing = () => {
           </svg>
         </div>
       </div>
-      <section className="first_section">
+      <section className="first_section" ref={firstSectionRef}>
         <p className="message">
           Vino și bucură-te de o seară plină de surprize culinare rafinate,
           <br />
@@ -85,9 +92,9 @@ const Landing = () => {
           <iframe
             title="location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.90072787018!2d28.847768576303853!3d47.06179767114503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ddfe95690c5%3A0xac60947a8d909966!2sAve%20Garden!5e0!3m2!1sro!2s!4v1684439656663!5m2!1sro!2s"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="map"
           ></iframe>
         </div>
@@ -96,12 +103,56 @@ const Landing = () => {
         <h1>Programul Evenimentului</h1>
         <p>
           Fiecare detaliu a fost meticulos planificat și implementat pentru a
-          asigura că momentul nostru special va fi deosebit și de durată în
-          memoria noastră și a celor care vor fi alături de noi.
+          asigura ca momentul nostru special să fie deosebit și de durată în
+          memoria noastră și a celor dragi.
         </p>
         {/* <VerticalOrnament /> */}
         <img src={timeline} alt="timeline" className="timeline" />
       </section>
+      <section className="love_story">
+        <h1>Cronica Iubirii Noastre</h1>
+        <p>
+          Cristian și Ana s-au întâlnit la gimnaziu în clasa a 7-a, când aveau
+          doar 13 ani. Ceea ce a început ca o prietenie frumoasă și glume la
+          pauzele dintre lecții a evoluat rapid într-o relație specială. Pe
+          măsură ce timpul a trecut, s-au cunoscut din ce în ce mai bine și au
+          descoperit o conexiune profundă și autentică între ei.
+        </p>
+        <p>
+          De-a lungul a doi ani, legătura lor a crescut și s-a transformat
+          într-o relație romantică. În ciuda provocărilor studiilor superioare,
+          care i-au separat geografic pentru o perioadă, iubirea lor s-a
+          întărit. Fiecare zi petrecută departe unul de celălalt a întărit
+          dorința lor de a fi împreună și de a construi un viitor comun.
+        </p>
+        <p>
+          Pe data de 7 august 2022, într-un loc magic și pitoresc de pe coasta
+          orasului Kotor din Muntenegru, Cristian a făcut un pas important în
+          povestea lor de dragoste. A ales acea zi specială pentru a-i cere mâna
+          Anei în căsătorie. Momentul a fost plin de emoție și bucurie, iar Ana
+          a acceptat cu inima deschisă.
+        </p>
+        <p>
+          Acum, Cristian și Ana doresc să sărbătorească această etapă importantă
+          a vieții lor alături de cei mai apropiați prieteni și familie. Acești
+          oameni speciali sunt martorii și susținătorii în călătoria lor de
+          dragoste. Prin nunta lor, ei doresc să împărtășească bucuria și
+          fericirea cu cei dragi, într-o atmosferă de iubire și armonie.
+        </p>
+        <CarouselComponent />
+      </section>
+      <section className="parallax_scrolling">
+        <div className="parallax_overlay">
+          <h2>Vă așteptăm cu drag!</h2>
+        </div>
+      </section>
+      <section className="questions">
+        <h1>Întrebări Frecvente</h1>
+        <Questions />
+      </section>
+      <footer>
+        <p>Acest site a fost făcut de Cristian și Ana</p>
+      </footer>
     </div>
   );
 };
