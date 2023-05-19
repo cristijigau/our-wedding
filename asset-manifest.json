@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.3b822fd4.css",
-    "main.js": "/our-wedding/static/js/main.3792f8f9.js",
-    "static/media/main_background.jpg": "/our-wedding/static/media/main_background.6992f8b6a32e1cf079d3.jpg",
-    "static/media/dove.png": "/our-wedding/static/media/dove.0b3f63c7d1f1693339f8.png",
-    "static/media/cheers.png": "/our-wedding/static/media/cheers.98d05d5e37a2c4328b43.png",
+    "main.css": "/our-wedding/static/css/main.936d5695.css",
+    "main.js": "/our-wedding/static/js/main.5c553967.js",
+    "static/media/TildaSans-Light.ttf": "/our-wedding/static/media/TildaSans-Light.51a606b555a6b050ff21.ttf",
+    "static/media/TildaSans-ExtraBold.ttf": "/our-wedding/static/media/TildaSans-ExtraBold.5f6f13b14973a72fa4b9.ttf",
+    "static/media/TildaSans-Regular.ttf": "/our-wedding/static/media/TildaSans-Regular.2cd2faf0de7356ee4eb2.ttf",
+    "static/media/TildaSans-Bold.ttf": "/our-wedding/static/media/TildaSans-Bold.c07dea09036a49f6ba90.ttf",
+    "static/media/TildaSans-Medium.ttf": "/our-wedding/static/media/TildaSans-Medium.a5cb911c5efb571cd407.ttf",
+    "static/media/TildaSans-Semibold.ttf": "/our-wedding/static/media/TildaSans-Semibold.ae0f3e5cb9edc8ad8405.ttf",
+    "static/media/TildaSans-Black.ttf": "/our-wedding/static/media/TildaSans-Black.35348118642f3d275ede.ttf",
+    "static/media/welcome_img.jpg": "/our-wedding/static/media/welcome_img.a57c35b87dcc9674e149.jpg",
+    "static/media/timeline.jpg": "/our-wedding/static/media/timeline.8fc95100e59409579484.jpg",
     "index.html": "/our-wedding/index.html",
-    "main.3b822fd4.css.map": "/our-wedding/static/css/main.3b822fd4.css.map",
-    "main.3792f8f9.js.map": "/our-wedding/static/js/main.3792f8f9.js.map"
+    "main.936d5695.css.map": "/our-wedding/static/css/main.936d5695.css.map",
+    "main.5c553967.js.map": "/our-wedding/static/js/main.5c553967.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b822fd4.css",
-    "static/js/main.3792f8f9.js"
+    "static/css/main.936d5695.css",
+    "static/js/main.5c553967.js"
   ]
 }
