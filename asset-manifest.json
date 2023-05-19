@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.936d5695.css",
-    "main.js": "/our-wedding/static/js/main.5c553967.js",
+    "main.css": "/our-wedding/static/css/main.d8e301e8.css",
+    "main.js": "/our-wedding/static/js/main.24269581.js",
+    "static/media/restaurant.jpg": "/our-wedding/static/media/restaurant.309ef1c0c3aed25b5339.jpg",
+    "static/media/flowers.jpeg": "/our-wedding/static/media/flowers.36c50d06aa8c7f383709.jpeg",
     "static/media/TildaSans-Light.ttf": "/our-wedding/static/media/TildaSans-Light.51a606b555a6b050ff21.ttf",
     "static/media/TildaSans-ExtraBold.ttf": "/our-wedding/static/media/TildaSans-ExtraBold.5f6f13b14973a72fa4b9.ttf",
     "static/media/TildaSans-Regular.ttf": "/our-wedding/static/media/TildaSans-Regular.2cd2faf0de7356ee4eb2.ttf",
@@ -9,14 +11,16 @@
     "static/media/TildaSans-Medium.ttf": "/our-wedding/static/media/TildaSans-Medium.a5cb911c5efb571cd407.ttf",
     "static/media/TildaSans-Semibold.ttf": "/our-wedding/static/media/TildaSans-Semibold.ae0f3e5cb9edc8ad8405.ttf",
     "static/media/TildaSans-Black.ttf": "/our-wedding/static/media/TildaSans-Black.35348118642f3d275ede.ttf",
+    "static/media/timeline.jpg": "/our-wedding/static/media/timeline.814bae25a5de5b324a5f.jpg",
+    "static/media/parallax.jpeg": "/our-wedding/static/media/parallax.2eab263ee04a3edf495a.jpeg",
     "static/media/welcome_img.jpg": "/our-wedding/static/media/welcome_img.a57c35b87dcc9674e149.jpg",
-    "static/media/timeline.jpg": "/our-wedding/static/media/timeline.8fc95100e59409579484.jpg",
+    "static/media/couple.jpg": "/our-wedding/static/media/couple.df611ee04c76b5540020.jpg",
     "index.html": "/our-wedding/index.html",
-    "main.936d5695.css.map": "/our-wedding/static/css/main.936d5695.css.map",
-    "main.5c553967.js.map": "/our-wedding/static/js/main.5c553967.js.map"
+    "main.d8e301e8.css.map": "/our-wedding/static/css/main.d8e301e8.css.map",
+    "main.24269581.js.map": "/our-wedding/static/js/main.24269581.js.map"
   },
   "entrypoints": [
-    "static/css/main.936d5695.css",
-    "static/js/main.5c553967.js"
+    "static/css/main.d8e301e8.css",
+    "static/js/main.24269581.js"
   ]
 }
