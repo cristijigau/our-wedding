@@ -12,7 +12,7 @@
       justify-content: space-between;
       h4.question {
         font-size: 20px;
-        font-family: 'TildaSans-Semibold';
+        font-family: "TildaSans-Semibold";
         flex: 1;
         margin-right: 1rem;
       }
@@ -59,7 +59,7 @@
 
       p {
         font-size: 16px;
-        font-family: 'TildaSans-Light';
+        font-family: "TildaSans-Light";
       }
 
       &.selected {
@@ -67,7 +67,7 @@
         opacity: 1;
         max-height: 8rem;
         transition: visibility 0.2s, opacity 0.2s linear,
-          max-height 0.5s ease-out;
+          max-height 0.2s ease-out;
       }
     }
   }

@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
+import React, { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 
-import firstImage from '../../assets/images/welcome_img.jpg';
-import secondImage from '../../assets/images/couple.jpg';
-import thirdImage from '../../assets/images/flowers.jpeg';
-import fourthImage from '../../assets/images/restaurant.jpg';
-import fifthImage from '../../assets/images/timeline.jpg';
+import firstImage from "../../assets/images/welcome_img.jpg";
+import secondImage from "../../assets/images/couple.jpg";
+import thirdImage from "../../assets/images/flowers.jpeg";
+import fourthImage from "../../assets/images/restaurant.jpg";
+import fifthImage from "../../assets/images/timeline.jpg";
 
-import rightChevron from '../../assets/icons/right-chevron.png';
-import leftChevron from '../../assets/icons/left-chevron.png';
+import rightChevron from "../../assets/icons/right-chevron.png";
+import leftChevron from "../../assets/icons/left-chevron.png";
 
-import './index.scss';
+import "./index.scss";
 
 const images = [firstImage, secondImage, thirdImage, fourthImage, fifthImage];
 
@@ -18,8 +18,8 @@ const Carousel = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => handleLeftClick(),
-    onSwipedRight: () => handleRightClick(),
+    onSwipedLeft: () => handleRightClick(),
+    onSwipedRight: () => handleLeftClick(),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
@@ -45,7 +45,7 @@ const Carousel = () => {
       <div className="dots">
         {images.map((image, index) => (
           <div
-            className={`dot ${index === selectedImage ? 'selected' : ''}`}
+            className={`dot ${index === selectedImage ? "selected" : ""}`}
             key={`dot-${index}-${image}`}
           />
         ))}
@@ -53,11 +53,18 @@ const Carousel = () => {
       <div className="left_button" onClick={handleLeftClick}>
         <img src={leftChevron} alt="left chevron" className="left_chevron" />
       </div>
-      <img
-        src={images[selectedImage]}
-        alt="carousel_slide"
-        className="carousel_slide"
-      />
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={images[index]}
+          alt="carousel_slide"
+          className="carousel_slide"
+          style={{
+            width: selectedImage === index ? "100%" : "0",
+            transition: "width 0.2s ease",
+          }}
+        />
+      ))}
       <div className="right_button" onClick={handleRightClick}>
         <img src={rightChevron} alt="right chevron" className="right_chevron" />
       </div>

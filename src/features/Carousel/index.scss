@@ -36,16 +36,18 @@
     position: absolute;
     left: -4rem;
     top: 50%;
-    background: rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
     display: flex;
     align-items: center;
     border-radius: 100%;
     transform: translateY(-50%);
     cursor: pointer;
+    background: transparent;
+    transition: background 0.5s ease;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.1);
+      transition: background 0.5s ease;
     }
 
     .left_chevron {
@@ -58,16 +60,18 @@
     position: absolute;
     right: -4rem;
     top: 50%;
-    background: rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
     display: flex;
     align-items: center;
     border-radius: 100%;
     transform: translateY(-50%);
     cursor: pointer;
+    background: transparent;
+    transition: background 0.5s ease;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.1);
+      transition: background 0.5s ease;
     }
 
     .right_chevron {

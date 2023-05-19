@@ -1,12 +1,23 @@
-import React, { useRef } from 'react';
-import './index.scss';
+import React, { useRef } from "react";
+import "./index.scss";
+import confetti from "canvas-confetti";
 
-import timeline from '../../assets/images/timeline.jpg';
-import CarouselComponent from '../../features/Carousel';
-import Questions from '../../features/Questions';
+import timeline from "../../assets/images/timeline.jpg";
+import CarouselComponent from "../../features/Carousel";
+import Questions from "../../features/Questions";
+import CountDown from "../../features/CountDown";
+import ScrollHandler from "../../features/ScrollHandler";
 
 const Landing = () => {
   const firstSectionRef = useRef(null);
+
+  const shootConfetti = () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+  };
 
   return (
     <div className="landing">
@@ -14,7 +25,7 @@ const Landing = () => {
         <div className="image_overlay">
           <div className="covercontent">
             <span>CRISTIAN & ANA</span>
-            <span>Pasiune | Fericire | Eternitate</span>
+            <span>Pasiune. Fericire. Eternitate.</span>
             <span>20 OCTOMBRIE 2023, CHIȘINĂU</span>
           </div>
           <svg
@@ -26,7 +37,7 @@ const Landing = () => {
             height="18.592px"
             viewBox="0 0 38.417 18.592"
             onClick={() => {
-              firstSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+              firstSectionRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             <g>
@@ -38,11 +49,9 @@ const Landing = () => {
       <section className="first_section" ref={firstSectionRef}>
         <p className="message">
           Vino și bucură-te de o seară plină de surprize culinare rafinate,
-          <br />
           acompaniată de o selecție muzicală impecabilă. Un spectacol vizual
-          impresionant,
-          <br /> unde dansurile și energia pozitivă se vor contopi într-o
-          atmosferă de neuitat.
+          impresionant, unde dansurile și energia pozitivă se vor contopi într-o
+          atmosferă de&nbsp;neuitat.
         </p>
       </section>
       <section className="second_section">
@@ -104,7 +113,7 @@ const Landing = () => {
         <p>
           Fiecare detaliu a fost meticulos planificat și implementat pentru a
           asigura ca momentul nostru special să fie deosebit și de durată în
-          memoria noastră și a celor dragi.
+          memoria noastră și a celor&nbsp;dragi.
         </p>
         {/* <VerticalOrnament /> */}
         <img src={timeline} alt="timeline" className="timeline" />
@@ -140,18 +149,32 @@ const Landing = () => {
           fericirea cu cei dragi, într-o atmosferă de iubire și armonie.
         </p>
         <CarouselComponent />
+        <h2>
+          Apropo, linkul cu pozele de la nuntă urmează a fi postat aici:
+          <br />
+          🔗📸
+        </h2>
+      </section>
+      <section className="countdown_section">
+        <h1>Până la eveniment au mai rămas...</h1>
+        <CountDown />
+        <ScrollHandler
+          onScrollToSection={() => {
+            shootConfetti();
+          }}
+        />
       </section>
       <section className="parallax_scrolling">
         <div className="parallax_overlay">
-          <h2>Vă așteptăm cu drag!</h2>
+          <h1>Vă așteptăm cu drag!</h1>
         </div>
       </section>
       <section className="questions">
-        <h1>Întrebări Frecvente</h1>
+        <h2>Întrebări Frecvente</h2>
         <Questions />
       </section>
       <footer>
-        <p>Acest site a fost făcut de Cristian și Ana</p>
+        <p>Cristian și Ana sunt creatorii acestui site.</p>
       </footer>
     </div>
   );

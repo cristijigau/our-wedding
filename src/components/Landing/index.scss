@@ -1,4 +1,4 @@
-@import '../../styles/fonts.scss';
+@import "../../styles/fonts.scss";
 
 @mixin animate($animation, $duration, $method, $times) {
   animation: $animation $duration $method $times;
@@ -13,7 +13,7 @@
 .landing {
   .welcome_section {
     height: 100vh;
-    background: url('../../assets/images/welcome_img.jpg');
+    background: url("../../assets/images/welcome_img.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -40,17 +40,17 @@
         color: white;
 
         & > span:nth-child(1) {
-          font-family: 'TildaSans-Bold';
+          font-family: "TildaSans-Bold";
           font-size: 22px;
         }
 
         & > span:nth-child(2) {
-          font-family: 'TildaSans-Semibold';
+          font-family: "TildaSans-Semibold";
           font-size: 52px;
         }
 
         & > span:nth-child(3) {
-          font-family: 'TildaSans-Bold';
+          font-family: "TildaSans-Bold";
           font-size: 20px;
         }
       }
@@ -88,7 +88,7 @@
       width: 70%;
       font-size: 28px;
       text-align: center;
-      font-family: 'TildaSans-Light';
+      font-family: "TildaSans-Light";
       line-height: 40px;
     }
   }
@@ -109,19 +109,19 @@
       height: 7rem;
 
       .title {
-        font-family: 'TildaSans-Semibold';
+        font-family: "TildaSans-Semibold";
         font-size: 30px;
 
         .infinity {
           font-size: 60px;
           vertical-align: middle;
-          font-family: 'TildaSans-Light';
+          font-family: "TildaSans-Light";
           line-height: 10px;
         }
       }
 
       .description {
-        font-family: 'TildaSans-Light';
+        font-family: "TildaSans-Light";
         font-size: 16px;
       }
 
@@ -150,13 +150,13 @@
 
     p {
       font-size: 26px;
-      font-family: 'TildaSans-Light';
+      font-family: "TildaSans-Light";
       text-align: center;
       line-height: 40px;
 
       a {
         text-decoration: none;
-        font-family: 'TildaSans-Semibold';
+        font-family: "TildaSans-Semibold";
       }
     }
   }
@@ -177,7 +177,7 @@
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
@@ -198,7 +198,7 @@
   }
 
   .schedule {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,14 +212,14 @@
 
     p {
       font-size: 26px;
-      font-family: 'TildaSans-Light';
+      font-family: "TildaSans-Light";
       text-align: center;
       line-height: 40px;
     }
 
     .timeline {
-      margin: 0.5rem 0 0rem 0;
-      width: 50%;
+      margin: 2rem 0 0rem 0;
+      width: 75%;
     }
   }
 
@@ -230,7 +230,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(245, 245, 245);
-    padding: 10% 15%;
+    padding: 7% 15%;
 
     h1 {
       font-size: 52px;
@@ -238,18 +238,42 @@
     }
 
     p {
-      font-size: 26px;
-      font-family: 'TildaSans-Light';
+      font-size: 24px;
+      font-family: "TildaSans-Light";
       text-align: center;
       line-height: 40px;
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
+
+    h2 {
+      margin-top: 4rem;
+      font-size: 26px;
+      font-family: "TildaSans-Light";
+      text-align: center;
+    }
+  }
+
+  .countdown_section {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10%;
+
+    h1 {
+      text-align: center;
+      font-size: 52px;
+      margin-bottom: 52px;
+    }
   }
 
   .parallax_scrolling {
     height: 70vh;
-    background-image: url('../../assets/images/parallax.jpeg');
+    background-image: url("../../assets/images/parallax.jpeg");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -262,16 +286,16 @@
       height: 100%;
       background-image: -webkit-linear-gradient(
         top,
-        rgba(252, 196, 28, 0.5),
+        rgba(252, 196, 28, 0.1),
         rgb(252, 189, 0)
       );
       display: flex;
       justify-content: center;
       align-items: center;
 
-      h2 {
-        font-size: 42px;
-        font-family: 'TildaSans-Semibold';
+      h1 {
+        font-size: 52px;
+        font-family: "TildaSans-Semibold";
       }
     }
   }
@@ -284,8 +308,8 @@
     justify-content: flex-start;
     align-items: center;
 
-    h1 {
-      font-size: 52px;
+    h2 {
+      font-size: 42px;
       margin-top: 8rem;
       margin-bottom: 6rem;
     }
@@ -294,7 +318,7 @@
   footer {
     min-height: 30vh;
     background-color: rgb(0, 0, 0);
-    font-family: 'TildaSans-Light';
+    font-family: "TildaSans-Light";
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -317,21 +341,25 @@
           height: 60%;
           align-items: center;
           & > span:nth-child(1) {
-            font-family: 'TildaSans-Bold';
+            font-family: "TildaSans-Bold";
             font-size: 22px;
             text-align: center;
           }
 
           & > span:nth-child(2) {
-            font-family: 'TildaSans-Semibold';
+            font-family: "TildaSans-Semibold";
             font-size: 52px;
             text-align: center;
           }
 
           & > span:nth-child(3) {
-            font-family: 'TildaSans-Bold';
+            font-family: "TildaSans-Bold";
             font-size: 20px;
             text-align: center;
+          }
+
+          .vertical_line {
+            display: none;
           }
         }
 
@@ -386,6 +414,7 @@
     .schedule {
       text-align: center;
       padding: 0;
+
       h1 {
         margin-top: 4rem;
         padding: 0 5%;
@@ -400,7 +429,7 @@
       }
 
       .timeline {
-        margin: 0.5rem 0 0rem 0;
+        margin: 2rem 0 0rem 0;
         width: 100%;
       }
     }
@@ -420,21 +449,39 @@
       }
     }
 
+    .countdown_section {
+      h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
     .parallax_scrolling {
       height: 60vh;
+      background-image: url("../../assets/images/wine.gif");
+      background-attachment: unset;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
 
       .parallax_overlay {
-        h2 {
+        background-image: -webkit-linear-gradient(
+          top,
+          rgba(252, 196, 28, 0.1),
+          rgba(252, 189, 0, 0.8)
+        );
+        h1 {
+          font-size: 30px;
           text-align: center;
         }
       }
     }
 
     .questions {
-      h1 {
+      h2 {
         font-size: 30px;
         margin-top: 3rem;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
       }
     }
   }
