@@ -64,13 +64,13 @@
 
         @include keyframes(move-down) {
           0% {
-            transform: translateY(0%);
+            transform: translate(-50%, 0%);
           }
           50% {
-            transform: translateY(40%);
+            transform: translate(-50%, 40%);
           }
           100% {
-            transform: translateY(0%);
+            transform: translate(-50%, 0%);
           }
         }
         @include animate(move-down, 2s, ease-in-out, infinite);
