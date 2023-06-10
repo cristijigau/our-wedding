@@ -27,13 +27,6 @@ const images = [
 const Carousel = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => handleRightClick(),
-    onSwipedRight: () => handleLeftClick(),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
-
   const handleRightClick = () => {
     if (selectedImage + 1 === images.length) {
       setSelectedImage(0);
@@ -50,8 +43,20 @@ const Carousel = () => {
     }
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: handleRightClick,
+    onSwipedRight: handleLeftClick,
+    onTap: handleRightClick,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className="carousel_container" {...handlers}>
+    <div
+      className="carousel_container"
+      {...handlers}
+      style={{ touchAction: "pan-y" }}
+    >
       <div className="dots">
         {images.map((image, index) => (
           <div
@@ -71,7 +76,7 @@ const Carousel = () => {
           className="carousel_slide"
           style={{
             width: selectedImage === index ? "100%" : "0",
-            transition: "width 0.2s ease",
+            transition: "width 0.2s",
           }}
         />
       ))}
