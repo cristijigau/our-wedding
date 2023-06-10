@@ -27,7 +27,8 @@ const images = [
 const Carousel = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
-  const handleRightClick = () => {
+  const handleRightClick = (e) => {
+    e?.stopPropagation?.();
     if (selectedImage + 1 === images.length) {
       setSelectedImage(0);
     } else {
@@ -35,7 +36,8 @@ const Carousel = () => {
     }
   };
 
-  const handleLeftClick = () => {
+  const handleLeftClick = (e) => {
+    e?.stopPropagation?.();
     if (selectedImage === 0) {
       setSelectedImage(images.length - 1);
     } else {
@@ -46,7 +48,6 @@ const Carousel = () => {
   const handlers = useSwipeable({
     onSwipedLeft: handleRightClick,
     onSwipedRight: handleLeftClick,
-    onTap: handleRightClick,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
@@ -55,6 +56,7 @@ const Carousel = () => {
     <div
       className="carousel_container"
       {...handlers}
+      onClick={handleRightClick}
       style={{ touchAction: "pan-y" }}
     >
       <div className="dots">
