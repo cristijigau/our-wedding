@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.0e0fae3f.css",
-    "main.js": "/our-wedding/static/js/main.cd9c38d8.js",
+    "main.css": "/our-wedding/static/css/main.1714fa76.css",
+    "main.js": "/our-wedding/static/js/main.54fd9198.js",
     "static/media/wine.gif": "/our-wedding/static/media/wine.f0d1347441a83fb51cd6.gif",
-    "static/media/restaurant.jpg": "/our-wedding/static/media/restaurant.309ef1c0c3aed25b5339.jpg",
-    "static/media/flowers.jpeg": "/our-wedding/static/media/flowers.36c50d06aa8c7f383709.jpeg",
+    "static/media/2.jpg": "/our-wedding/static/media/2.0da1a0351ca00fc169b9.jpg",
+    "static/media/4.jpg": "/our-wedding/static/media/4.7adfce81fe21bb1bcb2d.jpg",
+    "static/media/7.jpg": "/our-wedding/static/media/7.d5a9b5be98248d58a9cf.jpg",
+    "static/media/1.jpg": "/our-wedding/static/media/1.bad41be8d4a9b3c96f5a.jpg",
+    "static/media/cover.jpg": "/our-wedding/static/media/cover.3edc7e94c9317439ce2e.jpg",
+    "static/media/5.jpg": "/our-wedding/static/media/5.ec1965472a291a84cc26.jpg",
+    "static/media/3.jpg": "/our-wedding/static/media/3.c71b2584b5f28ad75036.jpg",
     "static/media/TildaSans-Light.ttf": "/our-wedding/static/media/TildaSans-Light.51a606b555a6b050ff21.ttf",
     "static/media/TildaSans-ExtraBold.ttf": "/our-wedding/static/media/TildaSans-ExtraBold.5f6f13b14973a72fa4b9.ttf",
     "static/media/TildaSans-Regular.ttf": "/our-wedding/static/media/TildaSans-Regular.2cd2faf0de7356ee4eb2.ttf",
     "static/media/TildaSans-Bold.ttf": "/our-wedding/static/media/TildaSans-Bold.c07dea09036a49f6ba90.ttf",
     "static/media/TildaSans-Medium.ttf": "/our-wedding/static/media/TildaSans-Medium.a5cb911c5efb571cd407.ttf",
     "static/media/TildaSans-Semibold.ttf": "/our-wedding/static/media/TildaSans-Semibold.ae0f3e5cb9edc8ad8405.ttf",
+    "static/media/6.jpg": "/our-wedding/static/media/6.548fc0ee2ec267dbd033.jpg",
     "static/media/TildaSans-Black.ttf": "/our-wedding/static/media/TildaSans-Black.35348118642f3d275ede.ttf",
     "static/media/timeline.jpg": "/our-wedding/static/media/timeline.f86e773be37eb111815b.jpg",
     "static/media/parallax.jpeg": "/our-wedding/static/media/parallax.2eab263ee04a3edf495a.jpeg",
-    "static/media/welcome_img.jpg": "/our-wedding/static/media/welcome_img.a57c35b87dcc9674e149.jpg",
-    "static/media/couple.jpg": "/our-wedding/static/media/couple.df611ee04c76b5540020.jpg",
     "index.html": "/our-wedding/index.html",
-    "main.0e0fae3f.css.map": "/our-wedding/static/css/main.0e0fae3f.css.map",
-    "main.cd9c38d8.js.map": "/our-wedding/static/js/main.cd9c38d8.js.map"
+    "main.1714fa76.css.map": "/our-wedding/static/css/main.1714fa76.css.map",
+    "main.54fd9198.js.map": "/our-wedding/static/js/main.54fd9198.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e0fae3f.css",
-    "static/js/main.cd9c38d8.js"
+    "static/css/main.1714fa76.css",
+    "static/js/main.54fd9198.js"
   ]
 }
