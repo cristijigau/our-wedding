@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
-import firstImage from "../../assets/images/welcome_img.jpg";
-import secondImage from "../../assets/images/couple.jpg";
-import thirdImage from "../../assets/images/flowers.jpeg";
-import fourthImage from "../../assets/images/restaurant.jpg";
-import fifthImage from "../../assets/images/timeline.jpg";
+import firstImage from "../../assets/images/1.jpg";
+import secondImage from "../../assets/images/2.jpg";
+import thirdImage from "../../assets/images/3.jpg";
+import fourthImage from "../../assets/images/4.jpg";
+import fifthImage from "../../assets/images/5.jpg";
+import sixthImage from "../../assets/images/6.jpg";
+import seventhImage from "../../assets/images/7.jpg";
 
 import rightChevron from "../../assets/icons/right-chevron.png";
 import leftChevron from "../../assets/icons/left-chevron.png";
 
 import "./index.scss";
 
-const images = [firstImage, secondImage, thirdImage, fourthImage, fifthImage];
+const images = [
+  firstImage,
+  secondImage,
+  thirdImage,
+  fourthImage,
+  fifthImage,
+  sixthImage,
+  seventhImage,
+];
 
 const Carousel = () => {
   const [selectedImage, setSelectedImage] = useState(0);
