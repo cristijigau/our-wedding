@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.35b2a31f.css",
-    "main.js": "/our-wedding/static/js/main.cafaa227.js",
+    "main.css": "/our-wedding/static/css/main.de211d1f.css",
+    "main.js": "/our-wedding/static/js/main.1b81c6e8.js",
     "static/media/wine.gif": "/our-wedding/static/media/wine.f0d1347441a83fb51cd6.gif",
     "static/media/2.jpg": "/our-wedding/static/media/2.0da1a0351ca00fc169b9.jpg",
     "static/media/4.jpg": "/our-wedding/static/media/4.7adfce81fe21bb1bcb2d.jpg",
@@ -20,12 +20,13 @@
     "static/media/TildaSans-Black.ttf": "/our-wedding/static/media/TildaSans-Black.35348118642f3d275ede.ttf",
     "static/media/timeline.jpg": "/our-wedding/static/media/timeline.f86e773be37eb111815b.jpg",
     "static/media/parallax.jpeg": "/our-wedding/static/media/parallax.2eab263ee04a3edf495a.jpeg",
+    "static/media/clock.png": "/our-wedding/static/media/clock.3a77a175ffba62cd7646.png",
     "index.html": "/our-wedding/index.html",
-    "main.35b2a31f.css.map": "/our-wedding/static/css/main.35b2a31f.css.map",
-    "main.cafaa227.js.map": "/our-wedding/static/js/main.cafaa227.js.map"
+    "main.de211d1f.css.map": "/our-wedding/static/css/main.de211d1f.css.map",
+    "main.1b81c6e8.js.map": "/our-wedding/static/js/main.1b81c6e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.35b2a31f.css",
-    "static/js/main.cafaa227.js"
+    "static/css/main.de211d1f.css",
+    "static/js/main.1b81c6e8.js"
   ]
 }
