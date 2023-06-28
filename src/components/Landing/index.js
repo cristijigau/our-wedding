@@ -7,6 +7,7 @@ import CarouselComponent from "../../features/Carousel";
 import Questions from "../../features/Questions";
 import CountDown from "../../features/CountDown";
 import ScrollHandler from "../../features/ScrollHandler";
+import clockIcon from "../../assets/icons/clock.png";
 
 const Landing = () => {
   const firstSectionRef = useRef(null);
@@ -27,6 +28,9 @@ const Landing = () => {
             <span>CRISTIAN & ANA</span>
             <span>Pasiune. Fericire. Eternitate.</span>
             <span>20 OCTOMBRIE 2023, CHIȘINĂU</span>
+            <span className="hour">
+              <img src={clockIcon} className="clock_icon" alt="clock" /> 17:00
+            </span>
           </div>
           <svg
             role="presentation"

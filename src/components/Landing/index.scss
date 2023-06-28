@@ -53,6 +53,21 @@
           font-family: "TildaSans-Bold";
           font-size: 20px;
         }
+
+        & > span:nth-child(4) {
+          font-family: "TildaSans-Bold";
+          font-size: 20px;
+        }
+
+        .hour {
+          display: flex;
+          align-items: center;
+          .clock_icon {
+            width: 24px;
+            margin-right: 10px;
+            filter: invert(100%);
+          }
+        }
       }
 
       .arrow_svg {
