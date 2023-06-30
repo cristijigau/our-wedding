@@ -123,7 +123,7 @@ const Landing = () => {
         <img src={timeline} alt="timeline" className="timeline" />
       </section>
       <section className="love_story">
-        <h1>Cronica Iubirii Noastre</h1>
+        <h1>Cronica Iubirii</h1>
         <p>
           Cristian și Ana s-au întâlnit la gimnaziu în clasa a 7-a, când aveau
           doar 13 ani. Ceea ce a început ca o prietenie frumoasă și glume la
