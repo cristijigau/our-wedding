@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/our-wedding/static/css/main.de211d1f.css",
-    "main.js": "/our-wedding/static/js/main.1b81c6e8.js",
+    "main.js": "/our-wedding/static/js/main.f1ebe4dd.js",
     "static/media/wine.gif": "/our-wedding/static/media/wine.f0d1347441a83fb51cd6.gif",
+    "static/media/1.jpg": "/our-wedding/static/media/1.18454565a5cc9570efcf.jpg",
+    "static/media/3.jpg": "/our-wedding/static/media/3.11e1c6a6e2b3fe7c694e.jpg",
     "static/media/2.jpg": "/our-wedding/static/media/2.0da1a0351ca00fc169b9.jpg",
     "static/media/4.jpg": "/our-wedding/static/media/4.7adfce81fe21bb1bcb2d.jpg",
     "static/media/7.jpg": "/our-wedding/static/media/7.d5a9b5be98248d58a9cf.jpg",
-    "static/media/1.jpg": "/our-wedding/static/media/1.bad41be8d4a9b3c96f5a.jpg",
     "static/media/cover.jpg": "/our-wedding/static/media/cover.3edc7e94c9317439ce2e.jpg",
     "static/media/5.jpg": "/our-wedding/static/media/5.ec1965472a291a84cc26.jpg",
-    "static/media/3.jpg": "/our-wedding/static/media/3.c71b2584b5f28ad75036.jpg",
     "static/media/TildaSans-Light.ttf": "/our-wedding/static/media/TildaSans-Light.51a606b555a6b050ff21.ttf",
     "static/media/TildaSans-ExtraBold.ttf": "/our-wedding/static/media/TildaSans-ExtraBold.5f6f13b14973a72fa4b9.ttf",
     "static/media/TildaSans-Regular.ttf": "/our-wedding/static/media/TildaSans-Regular.2cd2faf0de7356ee4eb2.ttf",
@@ -23,10 +23,10 @@
     "static/media/clock.png": "/our-wedding/static/media/clock.3a77a175ffba62cd7646.png",
     "index.html": "/our-wedding/index.html",
     "main.de211d1f.css.map": "/our-wedding/static/css/main.de211d1f.css.map",
-    "main.1b81c6e8.js.map": "/our-wedding/static/js/main.1b81c6e8.js.map"
+    "main.f1ebe4dd.js.map": "/our-wedding/static/js/main.f1ebe4dd.js.map"
   },
   "entrypoints": [
     "static/css/main.de211d1f.css",
-    "static/js/main.1b81c6e8.js"
+    "static/js/main.f1ebe4dd.js"
   ]
 }
