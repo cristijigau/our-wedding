@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.de211d1f.css",
-    "main.js": "/our-wedding/static/js/main.f1ebe4dd.js",
+    "main.css": "/our-wedding/static/css/main.f96e9c26.css",
+    "main.js": "/our-wedding/static/js/main.fb7a5a2b.js",
     "static/media/wine.gif": "/our-wedding/static/media/wine.f0d1347441a83fb51cd6.gif",
     "static/media/1.jpg": "/our-wedding/static/media/1.18454565a5cc9570efcf.jpg",
     "static/media/3.jpg": "/our-wedding/static/media/3.11e1c6a6e2b3fe7c694e.jpg",
+    "static/media/muntenegru.webp": "/our-wedding/static/media/muntenegru.812d74900f4c75ab90bb.webp",
+    "static/media/school.webp": "/our-wedding/static/media/school.37f534c8f7ce6e92113d.webp",
     "static/media/2.jpg": "/our-wedding/static/media/2.0da1a0351ca00fc169b9.jpg",
     "static/media/4.jpg": "/our-wedding/static/media/4.7adfce81fe21bb1bcb2d.jpg",
     "static/media/7.jpg": "/our-wedding/static/media/7.d5a9b5be98248d58a9cf.jpg",
@@ -22,11 +24,11 @@
     "static/media/parallax.jpeg": "/our-wedding/static/media/parallax.2eab263ee04a3edf495a.jpeg",
     "static/media/clock.png": "/our-wedding/static/media/clock.3a77a175ffba62cd7646.png",
     "index.html": "/our-wedding/index.html",
-    "main.de211d1f.css.map": "/our-wedding/static/css/main.de211d1f.css.map",
-    "main.f1ebe4dd.js.map": "/our-wedding/static/js/main.f1ebe4dd.js.map"
+    "main.f96e9c26.css.map": "/our-wedding/static/css/main.f96e9c26.css.map",
+    "main.fb7a5a2b.js.map": "/our-wedding/static/js/main.fb7a5a2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.de211d1f.css",
-    "static/js/main.f1ebe4dd.js"
+    "static/css/main.f96e9c26.css",
+    "static/js/main.fb7a5a2b.js"
   ]
 }
