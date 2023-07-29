@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./index.scss";
 import confetti from "canvas-confetti";
 
@@ -8,8 +8,13 @@ import Questions from "../../features/Questions";
 import CountDown from "../../features/CountDown";
 import ScrollHandler from "../../features/ScrollHandler";
 import clockIcon from "../../assets/icons/clock.png";
+import PhotoModal from "../PhotoModal";
+import Montenegro from "../../assets/images/muntenegru.webp";
+import SchoolPhoto from "../../assets/images/school.webp";
 
 const Landing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModalImage, setSelectedModalImage] = useState();
   const firstSectionRef = useRef(null);
 
   const shootConfetti = () => {
@@ -20,8 +25,25 @@ const Landing = () => {
     });
   };
 
+  const handleWordClick = (imageIndex) => {
+    setSelectedModalImage(imageIndex);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const modalImages = [SchoolPhoto, Montenegro];
+
   return (
     <div className="landing">
+      <PhotoModal
+        closeModal={closeModal}
+        selectedModalImage={selectedModalImage}
+        isModalOpen={isModalOpen}
+        modalImages={modalImages}
+      />
       <div className="welcome_section">
         <div className="image_overlay">
           <div className="covercontent">
@@ -125,32 +147,48 @@ const Landing = () => {
       <section className="love_story">
         <h1>Cronica Iubirii</h1>
         <p>
-          Cristian și Ana s-au întâlnit la gimnaziu în clasa a 7-a, când aveau
-          doar 13 ani. Ceea ce a început ca o prietenie frumoasă și glume la
-          pauzele dintre lecții a evoluat rapid într-o relație specială. Pe
-          măsură ce timpul a trecut, s-au cunoscut din ce în ce mai bine și au
-          descoperit o conexiune profundă și autentică între ei.
+          Cristian și Ana s-au întâlnit la gimnaziu, când erau în clasa a 7-a și
+          aveau doar{" "}
+          <strong
+            style={{ cursor: "pointer" }}
+            onClick={() => handleWordClick(0)}
+          >
+            13 ani (vezi poza)
+          </strong>
+          . Ceea ce a început ca o prietenie frumoasă și glume la pauzele dintre
+          lecții, a evoluat natural într-o relație mai specială. De-a lungul a
+          doi ani, legătura lor a crescut și s-a transformat ulterior într-o
+          relație romantică.
         </p>
         <p>
-          De-a lungul a doi ani, legătura lor a crescut și s-a transformat
-          într-o relație romantică. În ciuda provocărilor studiilor superioare,
-          care i-au separat geografic pentru o perioadă, iubirea lor s-a
-          întărit. Fiecare zi petrecută departe unul de celălalt a întărit
-          dorința lor de a fi împreună și de a construi un viitor comun.
+          Cu timpul, cei doi s-au cunoscut din ce în ce mai mult și au
+          descoperit o conexiune profundă și autentică între ei. În ciuda
+          provocărilor studiilor superioare, care i-au separat geografic pentru
+          o perioadă, iubirea lor s-a întărit. Fiecare zi petrecută departe unul
+          de celălalt a fortificat dorința de a fi împreună și de a construi un
+          viitor comun.
         </p>
         <p>
-          Pe data de 7 august 2022, într-un loc magic și pitoresc de pe coasta
-          orasului Kotor din Muntenegru, Cristian a făcut un pas important în
-          povestea lor de dragoste. A ales acea zi specială pentru a-i cere mâna
-          Anei în căsătorie. Momentul a fost plin de emoție și bucurie, iar Ana
-          a acceptat cu inima deschisă.
+          Pe data de 7 august 2022, într-un parc pitoresc de pe coasta orasului
+          <strong
+            style={{ cursor: "pointer" }}
+            onClick={() => handleWordClick(1)}
+          >
+            {" "}
+            Kotor (vezi poza)
+          </strong>{" "}
+          din Muntenegru, Cristian a făcut un pas important în povestea lor de
+          dragoste. A ales acea zi pentru a-i cere mâna Anei în căsătorie.
+          Momentul a fost plin de emoții și bucurie, iar Ana a acceptat cu inima
+          deschisă.
         </p>
         <p>
-          Acum, Cristian și Ana doresc să sărbătorească această etapă importantă
-          a vieții lor alături de cei mai apropiați prieteni și familie. Acești
-          oameni speciali sunt martorii și susținătorii în călătoria lor de
-          dragoste. Prin nunta lor, ei doresc să împărtășească bucuria și
-          fericirea cu cei dragi, într-o atmosferă de iubire și armonie.
+          Acum, Cristian și Ana doresc să sărbătorească această etapă frumoasă a
+          vieții lor alături de cei mai apropiați prieteni și familie. Acești
+          oameni sunt martorii și susținătorii principali în călătoria lor de
+          dragoste. Prin evenimentul organizat pe data de 20 octombrie 2023, ei
+          doresc să împărtășească bucuria și fericirea lor cu cei dragi, într-o
+          atmosferă de armonie și iubire.
         </p>
         <CarouselComponent />
         <h2>

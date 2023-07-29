@@ -14,14 +14,14 @@ const initialQuestions = [
     id: 2,
     question: "Ce cadouri pot să aduc la întâmpinare?",
     answer:
-      "Ne-am bucura dacă în locul tradiționalului buchet de flori, vei aduce o sticlă de vin preferat sau o carte care te-a marcat. 🍷📚",
+      "Ne-am bucura dacă în locul tradiționalului buchet de flori, vei contribui financiar la un act de binefacere pe care îl susținem. La întâmpinare vei găsi boxa pentru donație cu detaliile cazului.",
     expanded: false,
   },
   {
     id: 3,
-    question: 'Va fi păstrată tradiția "dezbrăcatului miresei"?',
+    question: 'Va fi păstrată tradiția "dezbrăcatul miresei"?',
     answer:
-      'Având în vedere stilul modern al nunții și dorința noastră de a ne asigura că evenimentul este plin de distracție și savoare, am decis că nu vom păstra tradiția "dezbrăcatului miresei". 👰🏻‍♀️',
+      'Având în vedere stilul modern al nunții și dorința noastră de a ne asigura că evenimentul este plin de distracție, am decis că nu vom păstra tradiția "dezbrăcatul miresei". 👰🏻‍♀️',
     expanded: false,
   },
   {
