@@ -14,7 +14,7 @@ const initialQuestions = [
     id: 2,
     question: "Ce cadouri pot să aduc la întâmpinare?",
     answer:
-      "Ne-am bucura dacă în locul tradiționalului buchet de flori, vei contribui financiar la un act de binefacere pe care îl susținem. La întâmpinare vei găsi boxa pentru donație cu detaliile cazului.",
+      "Ne-am bucura dacă în locul tradiționalului buchet de flori, vei aduce o sticlă de vin preferat sau o carte care te-a marcat. 🍷📚",
     expanded: false,
   },
   {
