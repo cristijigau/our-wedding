@@ -197,7 +197,7 @@ const Landing = () => {
           🔗📸
         </h2>
       </section>
-      <section className="countdown_section">
+      {/* <section className="countdown_section">
         <h1>Până la eveniment au mai rămas...</h1>
         <CountDown />
         <ScrollHandler
@@ -205,7 +205,12 @@ const Landing = () => {
             shootConfetti();
           }}
         />
-      </section>
+      </section> */}
+      <ScrollHandler
+        onScrollToSection={() => {
+          shootConfetti();
+        }}
+      />
       <section className="parallax_scrolling">
         <div className="parallax_overlay">
           <h1>Vă așteptăm cu drag!</h1>
